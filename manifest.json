@@ -1,7 +1,7 @@
 {
   "name": "GoFarm Analytics",
   "description": "GoFarm Analytics stands as an all-inclusive agricultural toolkit, equipping users with up-to-the-minute weather information, accurate forecasts, intricate evaluations of present weather's agricultural impacts, reverse geocoding provisions, and sophisticated soil analyses. This formidable API presents an easily navigable means of attaining crucial farming intelligence, facilitating well-informed choices and heightened farming efficiency. Situated within the broader GoFarm project, which you can explore [here](https://gofarm.today), it also offers insights into crops and seed prices to further support agricultural decision-making.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "url": "https://analytics.gofarm.today",
   "author": {
     "name": "Eric Michael Constantino",
