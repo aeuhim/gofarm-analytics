@@ -116,11 +116,11 @@ class WeatherForecast(BaseModel):
     lon: float
     timezone: str
     timezone_offset: str
-    current: dict
-    minutely: list[dict]
-    hourly: list[dict]
-    daily: list[dict]
-    alerts: list[dict]
+    current: CurrentWeather
+    minutely: list[MinutelyWeather]
+    hourly: list[HourlyWeather]
+    daily: list[DailyWeather]
+    alerts: list[Alert]
 
 
 class WeatherUpdate(BaseModel):
