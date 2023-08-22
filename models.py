@@ -129,4 +129,4 @@ class WeatherUpdate(BaseModel):
     timezone: str
     timezone_offset: str
     current: dict
-    alerts: list[dict]
+    alerts: list[Alert]
