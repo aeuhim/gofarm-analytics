@@ -98,6 +98,15 @@ class DailyWeather(BaseModel):
     uvi: float
 
 
+class Alert(BaseModel):
+    sender_name: str
+    event: str
+    start: int
+    end: int
+    description: str
+    tags: list[str]
+
+
 class WeatherAnalytics(BaseModel):
     pass
 
