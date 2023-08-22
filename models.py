@@ -61,6 +61,43 @@ class HourlyWeather(BaseModel):
     pop: float
 
 
+class DailyWeather(BaseModel):
+    class Temperature(BaseModel):
+        day: float
+        min: float
+        max: float
+        night: float
+        eve: float
+        morn: float
+
+    class FeelsLike(BaseModel):
+        day: float
+        night: float
+        eve: float
+        morn: float
+
+    dt: int
+    sunrise: int
+    sunset: int
+    moonrise: int
+    moonset: int
+    moon_phase: float
+    summary: str
+    temp: Temperature
+    feels_like: FeelsLike
+    pressure: int
+    humidity: int
+    dew_point: float
+    wind_speed: float
+    wind_deg: int
+    wind_gust: float
+    weather: list[Weather]
+    clouds: int
+    pop: float
+    rain: float
+    uvi: float
+
+
 class WeatherAnalytics(BaseModel):
     pass
 
