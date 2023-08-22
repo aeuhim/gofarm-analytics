@@ -39,6 +39,11 @@ class CurrentWeather(BaseModel):
     weather: list[Weather]
 
 
+class MinutelyWeather(BaseModel):
+    dt: int
+    precipitation: int
+
+
 class WeatherAnalytics(BaseModel):
     pass
 
