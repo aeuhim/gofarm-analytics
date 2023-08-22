@@ -14,6 +14,13 @@ class Geolocation(BaseModel):
     longitude: float
 
 
+class Weather(BaseModel):
+    id: int
+    main: str
+    description: str
+    icon: str
+
+
 class WeatherAnalytics(BaseModel):
     pass
 
