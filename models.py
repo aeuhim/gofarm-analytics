@@ -44,6 +44,23 @@ class MinutelyWeather(BaseModel):
     precipitation: int
 
 
+class HourlyWeather(BaseModel):
+    dt: int
+    temp: float
+    feels_like: float
+    pressure: int
+    humidity: int
+    dew_point: float
+    uvi: int
+    clouds: int
+    visibility: int
+    wind_speed: float
+    wind_deg: int
+    wind_gust: float
+    weather: list[Weather]
+    pop: float
+
+
 class WeatherAnalytics(BaseModel):
     pass
 
