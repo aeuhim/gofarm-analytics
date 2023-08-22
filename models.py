@@ -41,7 +41,7 @@ class CurrentWeather(BaseModel):
 
 class MinutelyWeather(BaseModel):
     dt: int
-    precipitation: int
+    precipitation: float
 
 
 class HourlyWeather(BaseModel):
@@ -51,7 +51,7 @@ class HourlyWeather(BaseModel):
     pressure: int
     humidity: int
     dew_point: float
-    uvi: int
+    uvi: float
     clouds: int
     visibility: int
     wind_speed: float
@@ -115,7 +115,7 @@ class WeatherForecast(BaseModel):
     lat: float
     lon: float
     timezone: str
-    timezone_offset: str
+    timezone_offset: int
     current: CurrentWeather
     minutely: list[MinutelyWeather]
     hourly: list[HourlyWeather]
@@ -127,6 +127,6 @@ class WeatherUpdate(BaseModel):
     lat: float
     lon: float
     timezone: str
-    timezone_offset: str
+    timezone_offset: int
     current: dict
     alerts: list[Alert]
